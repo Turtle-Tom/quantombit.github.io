@@ -14259,21 +14259,25 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Impacts-of-the-Coronavirus-on-Various-Demographics-in-Maryland-from-04/2020-to-11/2021">Impacts of the Coronavirus on Various Demographics in Maryland from 04/2020 to 11/2021<a class="anchor-link" href="#Impacts-of-the-Coronavirus-on-Various-Demographics-in-Maryland-from-04/2020-to-11/2021">&#182;</a></h1><p>Thomas J. Garbe O'Connor \
-University of Maryland, College Park - Computer Science \
+<h1 id="Impacts-of-the-Coronavirus-on-Various-Demographics-in-Maryland-from-04/2020-to-11/2021">Impacts of the Coronavirus on Various Demographics in Maryland from 04/2020 to 11/2021<a class="anchor-link" href="#Impacts-of-the-Coronavirus-on-Various-Demographics-in-Maryland-from-04/2020-to-11/2021">&#182;</a></h1><p>Thomas J. Garbe O'Connor
+<br>
+University of Maryland, College Park - Computer Science
+<br>
 12/20/2021</p>
 <h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>The global pandemic caused by the Coronavirus, known as COVID-19, has had numerous profound impacts on people around the world. It has also lead to a large amount of lives lost over the months since the Spring of 2020. Looking at data provided by the state of Maryland in the United States, this project attempts to examine how various groups within Maryland have been affected in terms of deaths caused by COVID-19.</p>
 <h3 id="Definitions">Definitions<a class="anchor-link" href="#Definitions">&#182;</a></h3><p><strong>Probable Case/Death</strong> <br>
 The CDC provides a definition for <a href="https://www.cdc.gov/coronavirus/2019-ncov/covid-data/faq-surveillance.html#:~:text=the%20United%20States%3F-,Understanding%20COVID%2D19%20Data,-What%20is%20a">"probable cases"</a>, stating:</p>
-<blockquote><p>A probable case or death is defined as any one of the following: \
+<blockquote><p>A probable case or death is defined as any one of the following:
 <br>
-• Meets clinical criteria AND epidemiologic linkage with no confirmatory laboratory testing performed for SARS-CoV-2 \
-• Meets presumptive laboratory evidence \
-• Meets vital records criteria with no confirmatory laboratory evidence for SARS-CoV-2 \
+• Meets clinical criteria AND epidemiologic linkage with no confirmatory laboratory testing performed for SARS-CoV-2
+<br>
+• Meets presumptive laboratory evidence
+<br>
+• Meets vital records criteria with no confirmatory laboratory evidence for SARS-CoV-2
 <br>
 Any cases and deaths classified as probable are included in CDC case counts. The same applies to any cases and deaths classified as confirmed.</p>
 </blockquote>
-<p>Since probable deaths are included in all CDC counts, they will be included here as well. More information on probable cases can be found at <a href="https://covidtracking.com/analysis-updates/how-probable-cases-changed-through-the-covid-19-pandemic#:~:text=for%20false%20positives.-,Probable%20cases,-Probable%20cases%20can">The COVID Tracking Project</a>. \
+<p>Since probable deaths are included in all CDC counts, they will be included here as well. More information on probable cases can be found at <a href="https://covidtracking.com/analysis-updates/how-probable-cases-changed-through-the-covid-19-pandemic#:~:text=for%20false%20positives.-,Probable%20cases,-Probable%20cases%20can">The COVID Tracking Project</a>.
 <br>
 <strong>Confirmed Case/Death</strong> <br>
 As stated by <a href="https://covidtracking.com/analysis-updates/how-probable-cases-changed-through-the-covid-19-pandemic#:~:text=for%20disease%20surveillance.-,Confirmed%20cases,-Confirmed%20cases%20of">covidtracking.com</a>, a confirmed case or death occurs when the individual's PCR test returns positive. Confirmed deaths will be examined in addition with probable deaths.
@@ -15260,14 +15264,15 @@ This process is done for datasets referring to probable deaths and datasets refe
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Digging-Deeper">Digging Deeper<a class="anchor-link" href="#Digging-Deeper">&#182;</a></h2><p>Upon initial inspection it appears that older white males are the most common demographic to have died of COVID-19. \
+<h2 id="Digging-Deeper">Digging Deeper<a class="anchor-link" href="#Digging-Deeper">&#182;</a></h2><p>Upon initial inspection it appears that older white males are the most common demographic to have died of COVID-19.
 <br>
-Male deaths do not exceed female deaths by a wide margin, meaning it would be inaccurate to say the vast majority of deaths from COVID-19 are male. While this even split between male and female is somewhat uninsightful, it is worthy of mention that the virus seems to affect men and women evenly. What might be more inisghtful, given more data, is seeing cumulative totals for other gender definitions such as nonbinary, trans-male, and trans-female. While it is not suspected that rate of death varies necessarily by gender alone, these groups might be exposed to higher risk professions or lack the healthcare that would allow them to become either a probable or confirmed case in the eyes of a healthcare facility. \
+Male deaths do not exceed female deaths by a wide margin, meaning it would be inaccurate to say the vast majority of deaths from COVID-19 are male. While this even split between male and female is somewhat uninsightful, it is worthy of mention that the virus seems to affect men and women evenly. What might be more inisghtful, given more data, is seeing cumulative totals for other gender definitions such as nonbinary, trans-male, and trans-female. While it is not suspected that rate of death varies necessarily by gender alone, these groups might be exposed to higher risk professions or lack the healthcare that would allow them to become either a probable or confirmed case in the eyes of a healthcare facility.
 <br>
-Furthermore, it seems that the older an individual is, the more likely they are to die from COVID-19 with the '80+' age group making up nearly half of the total deaths. The average age of death was calculated by taking the cumulative counts from November 30th, multiplying them by the middle year of their age group (e.g. 20-29 =&gt; 25, 80+ =&gt; 85), adding those products together, and dividing by the sum of all cumulative counts (i.e. total cases). The resulting average age of those who lost their life to COVID-19 in Maryland is approximately 73 years.\
+Furthermore, it seems that the older an individual is, the more likely they are to die from COVID-19 with the '80+' age group making up nearly half of the total deaths. The average age of death was calculated by taking the cumulative counts from November 30th, multiplying them by the middle year of their age group (e.g. 20-29 =&gt; 25, 80+ =&gt; 85), adding those products together, and dividing by the sum of all cumulative counts (i.e. total cases). The resulting average age of those who lost their life to COVID-19 in Maryland is approximately 73 years.
 <br>
 The demographic that may need a deeper analysis is race. It seems intuitive that people who identify as White would make up the majority of deaths from COVID-19 because people who identify as White make up the majority of Maryland's population. Looking at <a href="https://www.census.gov/quickfacts/MD">2020 Census Data</a> reveals that people of White ethnicity make up 50 - 58.5% of Maryland's population whereas the second most prevelant group, Black and/or African American, make up 31.1%. Perhaps taking a look at the number of deaths as a percentage of each ethnicity's indivudual population would provide more insight.</p>
-<h3 id="Organizing-Race-Data">Organizing Race Data<a class="anchor-link" href="#Organizing-Race-Data">&#182;</a></h3><p>The percentages given by the Census Bureau will be stored for calculations that describe the percentage of lives lost within a specific race population. Also needed for this calculation is the total population of Maryland which can also be found in the 2020 Census Data. \
+<h3 id="Organizing-Race-Data">Organizing Race Data<a class="anchor-link" href="#Organizing-Race-Data">&#182;</a></h3><p>The percentages given by the Census Bureau will be stored for calculations that describe the percentage of lives lost within a specific race population. Also needed for this calculation is the total population of Maryland which can also be found in the 2020 Census Data.
+<br>
 The calculation done for each racial group is as follows:</p>
 <blockquote><p>racePopulation = totalPopulation*racePercentage
 <br>
@@ -15699,7 +15704,7 @@ Dep. Variable:       african_american   R-squared:                       0.995
 Model:                            OLS   Adj. R-squared:                  0.995
 Method:                 Least Squares   F-statistic:                 1.162e+05
 Date:                Mon, 20 Dec 2021   Prob (F-statistic):               0.00
-Time:                        16:08:59   Log-Likelihood:                -3467.7
+Time:                        17:07:29   Log-Likelihood:                -3467.7
 No. Observations:                 602   AIC:                             6939.
 Df Residuals:                     600   BIC:                             6948.
 Df Model:                           1                                         
@@ -15731,7 +15736,7 @@ Dep. Variable:                  white   R-squared:                       0.997
 Model:                            OLS   Adj. R-squared:                  0.997
 Method:                 Least Squares   F-statistic:                 2.268e+05
 Date:                Mon, 20 Dec 2021   Prob (F-statistic):               0.00
-Time:                        16:08:59   Log-Likelihood:                -3548.7
+Time:                        17:07:29   Log-Likelihood:                -3548.7
 No. Observations:                 602   AIC:                             7101.
 Df Residuals:                     600   BIC:                             7110.
 Df Model:                           1                                         
@@ -15763,7 +15768,7 @@ Dep. Variable:               hispanic   R-squared:                       0.972
 Model:                            OLS   Adj. R-squared:                  0.972
 Method:                 Least Squares   F-statistic:                 2.069e+04
 Date:                Mon, 20 Dec 2021   Prob (F-statistic):               0.00
-Time:                        16:08:59   Log-Likelihood:                -3104.9
+Time:                        17:07:29   Log-Likelihood:                -3104.9
 No. Observations:                 602   AIC:                             6214.
 Df Residuals:                     600   BIC:                             6223.
 Df Model:                           1                                         
@@ -15795,7 +15800,7 @@ Dep. Variable:                  asian   R-squared:                       0.996
 Model:                            OLS   Adj. R-squared:                  0.996
 Method:                 Least Squares   F-statistic:                 1.419e+05
 Date:                Mon, 20 Dec 2021   Prob (F-statistic):               0.00
-Time:                        16:08:59   Log-Likelihood:                -1999.3
+Time:                        17:07:29   Log-Likelihood:                -1999.3
 No. Observations:                 602   AIC:                             4003.
 Df Residuals:                     600   BIC:                             4011.
 Df Model:                           1                                         
@@ -15827,7 +15832,7 @@ Dep. Variable:                  other   R-squared:                       0.987
 Model:                            OLS   Adj. R-squared:                  0.987
 Method:                 Least Squares   F-statistic:                 4.641e+04
 Date:                Mon, 20 Dec 2021   Prob (F-statistic):               0.00
-Time:                        16:08:59   Log-Likelihood:                -1642.5
+Time:                        17:07:29   Log-Likelihood:                -1642.5
 No. Observations:                 602   AIC:                             3289.
 Df Residuals:                     600   BIC:                             3298.
 Df Model:                           1                                         
